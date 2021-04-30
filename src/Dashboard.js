@@ -63,13 +63,7 @@ class DashboardComponent extends React.Component {
                 </Formik>
                 <div className="output output-text">
                     <pre>{JSON.stringify(this.props.user, null, 2)}</pre>
-                    <div style={{ margin: '1em' }}>
-                        <img alt="" style={{ width: '70px' }} src={JSON.stringify(this.props.avatar_url, null, 2)} />
-                        <div>
-                            <div style={{ fontWeight: 'bold' }}>{JSON.stringify(this.props.name, null, 2)}</div>
-                            <div>{this.props.blog}</div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         );
