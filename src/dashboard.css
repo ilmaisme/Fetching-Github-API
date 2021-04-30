@@ -17,7 +17,7 @@ input {
 input:focus {
     border-color: #007eff;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
-    0 0 0 3px rgba(0, 126, 255, 0.1);
+        0 0 0 3px rgba(0, 126, 255, 0.1);
     outline: none;
 }
 
@@ -57,7 +57,7 @@ button:disabled {
     cursor: not-allowed !important;
 }
 
-button + button {
+button+button {
     margin-left: 1rem;
 }
 
@@ -66,3 +66,8 @@ button + button {
     padding: 0 60px;
 }
 
+.output-text {
+    text-align: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}

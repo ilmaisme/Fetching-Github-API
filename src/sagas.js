@@ -4,7 +4,7 @@ import {actions, t} from './actions';
 const baseUrl = 'https://api.github.com/users';
 
 function* loadUserData(action) {
-    const response = yield axios.get(`${baseUrl}/${action.name}`);
+    const response = yield axios.get(`${baseUrl}/${action.name}/repos`);
     yield put(actions.loadUserDataSuccess(response.data))
 }
 
